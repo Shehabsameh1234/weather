@@ -24,3 +24,43 @@ body {
 
 /* var */
 
+
+
+
+.nav-ul{
+    margin-right: 120px ;
+}
+.navbar-brand{
+    margin-bottom: 20px;
+
+}
+.navbar-brand h5, .navbar-brand p{
+    font-size: 13px;
+}
+.navbar-brand h5{
+    font-size: 16px;
+}
+
+.navbar-brand img{
+    width: 60px;
+}
+
+.navbar-brand div{
+  position: relative;
+  top: 20px;
+
+}
+
+
+.nav-item{
+    margin-left: 25px;   
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0
+}
+
+.nav-item a {
+font-size: 12px;
+}
+
