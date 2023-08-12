@@ -1,24 +1,22 @@
 /* Smartphones iPhone 4  any small screen*/
 
 @media (min-width: 0px) and (max-width: 320px) {
-    .bg-image .container{
-        top: 22%;
+    .container{
     width: 100% !important;
     }
 }
 
 
 @media (min-width: 321px)and (max-width: 480px) {
-    .bg-image .container{
-        top: 22%;
+     .container{
     width: 100% !important;
     }
 }
 
 
 @media (min-width: 481px) and (max-width: 640px) {
-    .bg-image .container{
-        top: 22%;
+     .container{
+     
     width: 90% !important;
     }
 }
@@ -64,8 +62,9 @@
 
 
 
-/* nav bar */
+
 @media (min-width:0px)and (max-width: 990px) {
+    /* nav bar */
     .nav-ul {
         margin-right: 0;
         background-color: #262936;
@@ -86,7 +85,49 @@
         padding: 10px 10px;
 
     }
+    /* nav bar */
+
+
+    .border-top-left{
+
+        border-top-left-radius: 10px;
+     
+     }
+     .border-bottom-left{
+       
+        border-bottom-left-radius: 0px;
+     
+     }
+     .border-top-right{
+       
+        border-top-right-radius: 10px;
+     
+     }
+     .border-top-right2{
+  
+        border-top-right-radius: 10px;
+     
+     }
+     
+     .border-bottom-right2{
+       
+        border-bottom-right-radius: 10px;
+     
+     }
+     .border-bottom-left2{
+        border-bottom-left-radius: 10px;  
+     }
+     .border-top-right2{
+
+        border-top-right-radius: 0px;
+     }
+
+    
 }
+
+
+
+
 
 @media (min-width:991px)and (max-width: 1280px) {
 

@@ -13,6 +13,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.container {
+    width: 80% !important;
+}
+
 /* global */
 
 
@@ -72,6 +76,7 @@ body {
 
 .nav-item a {
     font-size: 12px;
+
 }
 
 
@@ -80,20 +85,22 @@ body {
     border: 2px solid transparent;
 }
 
+
+
 .navitem-hover:hover {
     border-radius: 50rem;
     border-width: 2px;
     border-color: var(--info);
     border-style: solid;
-
 }
+
 /* nav bar */
 
 
 
 
 
-
+/* background */
 .bg-image {
     background-image: url(img/cairo.jpg);
     background-position: center;
@@ -111,9 +118,8 @@ body {
     padding-right: 40px;
 }
 
-.bg-image .container{
+.bg-image .container {
     top: 22%;
-width: 80% !important;
 }
 
 .form-control {
@@ -129,9 +135,83 @@ width: 80% !important;
     box-shadow: 0 0 0 .25rem rgba(13, 109, 253, 0)
 }
 
+/* background */
 
 
+.cardHeader {
+    background-color: #2d303d;
+
+}
+
+.cardBody img {
+    width: 70px;
+}
+
+.cardBody {
+    background-color: #323544;
+}
+
+.card-text-color {
+    color: #bfc1c8;
+}
 
 
+.cardHeader2 {
+    background-color: #222530;
+
+}
+
+.cardBody2 {
+    background-color: #262936;
+    height: 294px;
+}
+
+.cardBody2 img {
+    width: 30px;
+}
+
+.cardBody2 h4 {
+    font-size: 18px;
+}
+
+.cardBody h2 {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.cardHeader3 {
+    background-color: #2d303d;
+}
+
+.cardBody3 img {
+    width: 30px;
+}
+.cardBody3 h4 {
+    font-size: 18px;
+}
+.cardBody3 {
+    background-color: #323544;
+    height: 294px;
+}
 
 
+.border-top-left{
+  
+   border-top-left-radius: 10px;
+
+}.border-bottom-left{
+  
+   border-bottom-left-radius: 10px;
+
+}
+.border-top-right2{
+  
+   border-top-right-radius: 10px;
+
+}
+
+.border-bottom-right2{
+  
+   border-bottom-right-radius: 10px;
+
+}
