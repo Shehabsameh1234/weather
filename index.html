@@ -73,69 +73,94 @@
     <!-- weather -->
 
 
-    <div class="container  py-5 ">
-
-
-        <div id="myRow" class="  row g-3  ">
-            <div class="col-lg-4   col-12 p-0 m-0 ">
-                <div>
-                    <div class="d-flex px-3 border-top-left border-top-right cardHeader card-text-color justify-content-between">
-                        <p class="mt-2">saturday</p>
-                        <p class="mt-2">12 august</p>
-                    </div>
-                    <div class="cardBody px-3 border-bottom-left  ">
-                        <p class="card-text-color mb-5 pt-3 ">cairo</p>
-                        <div class="d-flex mb-4 justify-content-between">
-                            <h2 class="text-white">32&#176;c</h2>
-                            <img src="img/sun.png" alt="">
+    <div id="weather-card">
+        <div class="container position-weather pt-5 ">
+            <div id="myRow" class="  row g-3  ">
+                <div class="col-lg-4   col-12 p-0 m-0 ">
+                    <div>
+                        <div
+                            class="d-flex px-3 border-top-left border-top-right cardHeader card-text-color justify-content-between">
+                            <p class="mt-2">saturday</p>
+                            <p class="mt-2">12 august</p>
                         </div>
-                        <p class="text-primary pb-3">partly cloudy</p>
-                        <div class="card-text-color  pb-3">
-                            <span><i class="fa-solid  mx-1 fa-umbrella"></i>20%</span>
-                            <span class="mx-2"><i class="fa-solid mx-1 fa-wind"></i>18km/h</span>
-                            <span><i class="fa-solid mx-1 fa-meteor"></i>east</span>
+                        <div class="cardBody px-3 border-bottom-left  ">
+                            <p class="card-text-color mb-5 pt-3 ">cairo</p>
+                            <div class="d-flex mb-4 justify-content-between">
+                                <h2 class="text-white">32&#176;c</h2>
+                                <img src="img/sun.png" alt="">
+                            </div>
+                            <p class="text-primary pb-1">partly cloudy</p>
+                            <div class="card-text-color  ">
+                                <span><i class="fa-solid  mx-1 fa-umbrella"></i>20%</span>
+                                <span class="mx-2"><i class="fa-solid mx-1 fa-wind"></i>18km/h</span>
+                                <span><i class="fa-solid mx-1 fa-meteor"></i>east</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4   col-12 p-0 m-0 ">
+                    <div>
+                        <div class=" justify-content-center d-flex px-3  cardHeader2 card-text-color ">
+                            <p class="mt-2">saturday</p>
+                        </div>
+                        <div class="cardBody2  py-5  text-center ">
+                            <img src="img/sun.png" class="mb-4" alt="">
+                            <h2 class="text-white mt-2">32&#176;c</h2>
+                            <h4 class=" card-text-color ">32&#176;c</h4>
+                            <p class="text-primary mt-4">sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4   col-12 p-0 m-0 ">
+                    <div>
+                        <div
+                            class=" justify-content-center border-top-right2  d-flex px-3  cardHeader3 card-text-color ">
+                            <p class="mt-2">saturday</p>
+                        </div>
+                        <div class="cardBody3  py-5  border-bottom-right2 border-bottom-left2 text-center ">
+                            <img src="img/sun.png" class="mb-4" alt="">
+                            <h2 class="text-white mt-2">32&#176;c</h2>
+                            <h4 class=" card-text-color ">32&#176;c</h4>
+                            <p class="text-primary mt-4">sunny</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-lg-4   col-12 p-0 m-0 ">
-                <div>
-                    <div class=" justify-content-center d-flex px-3  cardHeader2 card-text-color ">
-                        <p class="mt-2">saturday</p>
-                    </div>
-                    <div class="cardBody2  py-5  text-center ">
-                        <img src="img/sun.png" class="mb-4" alt="">
-                        <h2 class="text-white mt-2">32&#176;c</h2>
-                        <h4 class=" card-text-color ">32&#176;c</h4>
-                        <p class="text-primary mt-4">sunny</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4   col-12 p-0 m-0 ">
-                <div>
-                    <div class=" justify-content-center border-top-right2  d-flex px-3  cardHeader3 card-text-color ">
-                        <p class="mt-2">saturday</p>
-                    </div>
-                    <div class="cardBody3  py-5  border-bottom-right2 border-bottom-left2 text-center ">
-                        <img src="img/sun.png" class="mb-4" alt="">
-                        <h2 class="text-white mt-2">32&#176;c</h2>
-                        <h4 class=" card-text-color ">32&#176;c</h4>
-                        <p class="text-primary mt-4">sunny</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-
-
-
     <!-- weather -->
 
 
 
+
+
+    <!-- footer -->
+    <footer id="footer">
+       <div class="container  ">
+        <div class="row d-flex py-md-5 py-3 justify-content-between g-0">
+            <div class="col-md-7 col-12 mb-3">
+                <div class="position-relative text-center   ">
+                    <input type="text" class="form-control rounded-pill py-3"
+                        placeholder="Enter your email">
+                    <button class="btn btn-info rounded-pill  py-2">subscribe</button>
+
+                </div>
+            </div>
+            <div class="col-md-5 col-12">
+                <div class="text-center mt-2" >
+                  <span class="me-3" ><i class=" fa-brands fa-facebook-f"></i></span>
+                  <span  class="me-3"><i class=" fa-brands fa-twitter"></i></span>
+                  <span  class="me-3"><i class=" fa-brands fa-linkedin"></i></span>
+                  <span  class="me-3"><i class=" fa-brands fa-whatsapp"></i></span>
+                </div>
+            </div>
+            <p class="card-text-color   " >Copyright 2023 Company name. Designed by shehab sameh. All rights reserved</p>
+        </div>
+       </div>
+        
+    </footer>
+    
+    <!-- footer -->
 
 
 

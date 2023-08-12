@@ -1,30 +1,32 @@
 /* Smartphones iPhone 4  any small screen*/
 
 @media (min-width: 0px) and (max-width: 320px) {
-    .container{
-    width: 100% !important;
+    .container {
+        width: 95% !important;
     }
+    #weather-card .position-weather{
+        position: relative;
+        bottom: 100px;
+     }
 }
 
 
 @media (min-width: 321px)and (max-width: 480px) {
-     .container{
-    width: 100% !important;
+    .container {
+        width: 95% !important;
     }
 }
 
 
 @media (min-width: 481px) and (max-width: 640px) {
-     .container{
-     
-    width: 90% !important;
+    .container {
+
+        width: 90% !important;
     }
 }
 
 
-@media (min-width: 641px) and (max-width: 800px) {
-
-}
+@media (min-width: 641px) and (max-width: 800px) {}
 
 
 @media (min-width: 801px) and (max-width: 1024px) {}
@@ -36,10 +38,12 @@
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1281px) and (max-width: 1800px) {
+
     /* nav bar */
     .navbar {
         padding: 0px 150px;
     }
+
     /* nav bar */
 
 
@@ -52,6 +56,7 @@
     .navbar {
         padding: 0px 150px;
     }
+
     /* nav bar */
 
 
@@ -64,6 +69,7 @@
 
 
 @media (min-width:0px)and (max-width: 990px) {
+
     /* nav bar */
     .nav-ul {
         margin-right: 0;
@@ -85,55 +91,68 @@
         padding: 10px 10px;
 
     }
+
     /* nav bar */
 
 
-    .border-top-left{
 
+    /* card */
+    .border-top-left {
         border-top-left-radius: 10px;
-     
-     }
-     .border-bottom-left{
-       
-        border-bottom-left-radius: 0px;
-     
-     }
-     .border-top-right{
-       
-        border-top-right-radius: 10px;
-     
-     }
-     .border-top-right2{
-  
-        border-top-right-radius: 10px;
-     
-     }
-     
-     .border-bottom-right2{
-       
-        border-bottom-right-radius: 10px;
-     
-     }
-     .border-bottom-left2{
-        border-bottom-left-radius: 10px;  
-     }
-     .border-top-right2{
+    }
 
+    .border-bottom-left {
+        border-bottom-left-radius: 0px;
+    }
+
+    .border-top-right {
+        border-top-right-radius: 10px;
+    }
+
+    .border-top-right2 {
+        border-top-right-radius: 10px;
+    }
+
+    .border-bottom-right2 {
+        border-bottom-right-radius: 10px;
+    }
+
+    .border-bottom-left2 {
+        border-bottom-left-radius: 10px;
+    }
+
+    .border-top-right2 {
         border-top-right-radius: 0px;
-     }
+    }
+    #weather-card{
+        background-color: #1e202b;
+      height: auto;
+    
+    }
+ 
+    /* card */
+
+
+    #footer p{
+       margin-top: 20px;
+        text-align: center;
+    }
+    
+
+
+
+}
+
+
+
+
+/* nav bar */
+@media (min-width:991px)and (max-width: 1280px) {
+    .navbar {
+        padding: 0px 0px;
+    }
 
     
 }
 
-
-
-
-
-@media (min-width:991px)and (max-width: 1280px) {
-
-
-    .navbar {
-        padding: 0px 0px;
-    }
-}
 /* nav bar */

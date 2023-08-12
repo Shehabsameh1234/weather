@@ -7,6 +7,7 @@
 
 body {
     text-transform: capitalize;
+    background-color: #262936 ;
 }
 
 :root {
@@ -138,17 +139,32 @@ body {
 /* background */
 
 
+
+/* weather card */
+#weather-card{
+    background-color: #1e202b;
+  height: 40vh;
+
+}
+#weather-card .position-weather{
+   position: relative;
+   bottom: 150px;
+}
+
+
+
 .cardHeader {
     background-color: #2d303d;
 
 }
 
 .cardBody img {
-    width: 70px;
+    width: 80px;
 }
 
 .cardBody {
     background-color: #323544;
+    height: 280px;
 }
 
 .card-text-color {
@@ -163,7 +179,7 @@ body {
 
 .cardBody2 {
     background-color: #262936;
-    height: 294px;
+    height: 280px;
 }
 
 .cardBody2 img {
@@ -191,7 +207,7 @@ body {
 }
 .cardBody3 {
     background-color: #323544;
-    height: 294px;
+    height: 280px;
 }
 
 
@@ -209,9 +225,56 @@ body {
    border-top-right-radius: 10px;
 
 }
-
 .border-bottom-right2{
   
    border-bottom-right-radius: 10px;
 
 }
+/* weather card */
+
+
+
+/* footer */
+#footer{
+    background-color: #262936 ;
+    height: 200px;
+}
+
+
+#footer button {
+    position: absolute;
+    top: 7.8px;
+    right: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#footer span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+   background-color: var(--navy);
+cursor: pointer;
+transition: all;
+text-align: center;
+}
+#footer span:hover {
+   background-color: var(--info);
+}
+#footer span:hover i{
+   color: white;
+}
+
+ #footer span i{
+  margin-top: 9px;
+ color:var(--info);
+ transition: all .5s;
+
+}
+
+#footer p{
+    font-size: 13px;
+}
+
+/* footer */
