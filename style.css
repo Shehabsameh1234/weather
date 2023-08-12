@@ -18,42 +18,52 @@ body {
 
 /* var */
 
-/* :root {
-   
-} */
+:root {
+
+    --info: #0dcaf0;
+    --navy: #1e202b
+}
 
 /* var */
 
 
 
+/* nav bar */
 
-.nav-ul{
-    margin-right: 120px ;
+.navbar {
+    background-color: var(--navy);
 }
-.navbar-brand{
+
+.nav-ul {
+    margin-right: 120px;
+}
+
+.navbar-brand {
     margin-bottom: 20px;
 
 }
-.navbar-brand h5, .navbar-brand p{
+
+.navbar-brand h5,
+.navbar-brand p {
     font-size: 13px;
 }
-.navbar-brand h5{
+
+.navbar-brand h5 {
     font-size: 16px;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 60px;
 }
 
-.navbar-brand div{
-  position: relative;
-  top: 20px;
+.navbar-brand div {
+    position: relative;
+    top: 20px;
 
 }
 
-
-.nav-item{
-    margin-left: 25px;   
+.nav-item {
+    margin-left: 10px;
 }
 
 .navbar-toggler:focus {
@@ -61,9 +71,62 @@ body {
 }
 
 .nav-item a {
-font-size: 12px;
+    font-size: 12px;
 }
 
 
+.navitem-hover {
+    transition: all .3s;
+    border: 2px solid transparent;
+}
+
+.navitem-hover:hover {
+    border-radius: 50rem;
+    border-width: 2px;
+    border-color: var(--info);
+    border-style: solid;
+
+}
+
+/* nav bar */
 
 
+
+
+
+
+.bg-image {
+    background-image: url(img/cairo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+
+.bg-image button {
+    position: absolute;
+    top: 7.8px;
+    right: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.bg-image .container{
+    top: 22%;
+
+}
+
+.form-control {
+    color: white;
+    background-color: var(--navy);
+    border: 1px solid transparent;
+}
+
+.form-control:focus {
+    color: #ffffff;
+    background-color: var(--navy);
+    border-color: transparent;
+
+    box-shadow: 0 0 0 .25rem rgba(13, 109, 253, 0)
+}
