@@ -35,7 +35,7 @@ body {
 }
 
 .nav-ul {
-    margin-right: 120px;
+    margin-right: 25px;
 }
 
 .navbar-brand {
@@ -87,7 +87,6 @@ body {
     border-style: solid;
 
 }
-
 /* nav bar */
 
 
@@ -99,7 +98,7 @@ body {
     background-image: url(img/cairo.jpg);
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
 }
 
@@ -114,7 +113,7 @@ body {
 
 .bg-image .container{
     top: 22%;
-
+width: 80% !important;
 }
 
 .form-control {
@@ -127,6 +126,12 @@ body {
     color: #ffffff;
     background-color: var(--navy);
     border-color: transparent;
-
     box-shadow: 0 0 0 .25rem rgba(13, 109, 253, 0)
 }
+
+
+
+
+
+
+
