@@ -7,7 +7,7 @@ let list = []
 // global var
 
 
-async function myreq(city = "cairo") {
+async function myreq(city ="cairo") {
 
     // get data from api
     let myres = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d0e84b5cccb245e6a4772519231208&q=${city}&days=3`).catch((error) => console.log(error))
@@ -31,7 +31,25 @@ async function myreq(city = "cairo") {
     // display data in html
 
 }
-myreq()
+ myreq()
+
+
+
+
+// async function locationcity() {
+//     let myres = await fetch(`https://ipinfo.io/json?token=76e6fb570bd7a1`).catch((error) => console.log(error))
+//     let data = await myres.json()
+//     let city=data.city
+//     console.log(city)
+// }
+
+// locationcity()
+
+
+
+
+
+
 
 
 
