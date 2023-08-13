@@ -1,18 +1,21 @@
 
 "use strict"
-
+// global var
 let inputFind = document.getElementById("find-input")
 let btnfind = document.getElementById("btn-find")
-
 let list = []
-
+// global var
 
 
 async function myreq(city = "cairo") {
+
+    // get data from api
     let myres = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d0e84b5cccb245e6a4772519231208&q=${city}&days=3`).catch((error) => console.log(error))
     let data = await myres.json()
     list = data
-    
+    // get data from api
+
+    // display data in html
     let namecity = document.getElementById("cityname").innerHTML = list.location.name
     let currentIcon = document.getElementById("currenticon").setAttribute("src", list.current.condition.icon)
     let currentStatus = document.getElementById("currentstatus").innerHTML = list.current.condition.text
@@ -25,6 +28,8 @@ async function myreq(city = "cairo") {
     let lastDayStatus = document.getElementById("lastdaystatus").innerHTML = list.forecast.forecastday[2].day.condition.text
     let secondDayIcon = document.getElementById("seconddayicon").setAttribute("src",list.forecast.forecastday[1].day.condition.icon) 
     let lastDayIcon = document.getElementById("lastdayicon").setAttribute("src",list.forecast.forecastday[2].day.condition.icon) 
+    // display data in html
+
 }
 myreq()
 
