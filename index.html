@@ -64,8 +64,8 @@
     <div class="bg-image">
         <div class="position-relative  container ">
             <input id="find-input" type="text" class="form-control rounded-pill py-3"
-                placeholder="Find your location...">
-            <button class="btn btn-info rounded-pill  py-2">Find</button>
+                placeholder="Find your location...Press the button">
+            <button id="btn-find" class="btn btn-info rounded-pill  py-2">Find</button>
         </div>
     </div>
     <!-- background -->
@@ -80,11 +80,11 @@
                     <div>
                         <div
                             class="d-flex px-3 border-top-left border-top-right cardHeader card-text-color justify-content-between">
-                            <p class="mt-2">saturday</p>
-                            <p class="mt-2">12 august</p>
+                            <p id="firstday-day" class="mt-2"></p>
+                            <p id="firstday-month" class="mt-2"></p>
                         </div>
                         <div class="cardBody px-3 border-bottom-left  ">
-                            <p class="card-text-color mb-5 pt-3 ">cairo</p>
+                            <p id="cityname" class="card-text-color mb-5 pt-3 "></p>
                             <div class="d-flex mb-4 justify-content-between">
                                 <h2 class="text-white">32&#176;c</h2>
                                 <img src="img/sun.png" alt="">
@@ -101,7 +101,7 @@
                 <div class="col-lg-4   col-12 p-0 m-0 ">
                     <div>
                         <div class=" justify-content-center d-flex px-3  cardHeader2 card-text-color ">
-                            <p class="mt-2">saturday</p>
+                            <p id="tomorrow" class="mt-2"></p>
                         </div>
                         <div class="cardBody2  py-5  text-center ">
                             <img src="img/sun.png" class="mb-4" alt="">
@@ -115,7 +115,7 @@
                     <div>
                         <div
                             class=" justify-content-center border-top-right2  d-flex px-3  cardHeader3 card-text-color ">
-                            <p class="mt-2">saturday</p>
+                            <p id="aftertomorrow" class="mt-2">saturday</p>
                         </div>
                         <div class="cardBody3  py-5  border-bottom-right2 border-bottom-left2 text-center ">
                             <img src="img/sun.png" class="mb-4" alt="">
@@ -178,7 +178,7 @@
 
 
 
-
+<script src="main.js"></script>
 
 
 
