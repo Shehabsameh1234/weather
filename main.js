@@ -12,9 +12,22 @@ async function myreq(city = "cairo") {
     let myres = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d0e84b5cccb245e6a4772519231208&q=${city}&days=3`).catch((error) => console.log(error))
     let data = await myres.json()
     list = data
-   let shehab= list.forecast.forecastday[0].hour
+   let secondday= list.forecast.forecastday[1].day.maxtemp_c
+
+
+
+
+
+    
+
+
+
+
+
+
    
     let namecity = document.getElementById("cityname").innerHTML = list.location.name
+    let secondDayMaxTemp = document.getElementById("seconddaymaxtemp").innerHTML = secondday
 }
 myreq()
 
@@ -30,7 +43,6 @@ btnfind.addEventListener("click", function () {
     myreq(value)
 })
 // get city name from input
-
 
 
 
@@ -63,7 +75,7 @@ const monthNames = ["January", "February", "March", "april", "may", "june", "jul
 let currentmonth = monthNames[month];
 const daynum = new Date();
 let daynumber = daynum.getDate()
-let sameh = document.getElementById("firstday-month").innerHTML = daynumber + " " + currentmonth
+let firstdaymonth = document.getElementById("firstday-month").innerHTML = daynumber + " " + currentmonth
 // get month
 
 
