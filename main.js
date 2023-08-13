@@ -12,16 +12,19 @@ async function myreq(city = "cairo") {
     let myres = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d0e84b5cccb245e6a4772519231208&q=${city}&days=3`).catch((error) => console.log(error))
     let data = await myres.json()
     list = data
+    
     let namecity = document.getElementById("cityname").innerHTML = list.location.name
-    let currentIcon=document.getElementById("currenticon").setAttribute("src",list.current.condition.icon)
-    let currentStatus=document.getElementById("currentstatus").innerHTML=list.current.condition.text
-    let cuttentTemp=document.getElementById("cuttenttemp").innerHTML=list.current.temp_c
+    let currentIcon = document.getElementById("currenticon").setAttribute("src", list.current.condition.icon)
+    let currentStatus = document.getElementById("currentstatus").innerHTML = list.current.condition.text
+    let cuttentTemp = document.getElementById("cuttenttemp").innerHTML = list.current.temp_c
     let secondDayMaxTemp = document.getElementById("seconddaymaxtemp").innerHTML = list.forecast.forecastday[1].day.maxtemp_c
     let secondDayLowTemp = document.getElementById("seconddaylowtemp").innerHTML = list.forecast.forecastday[1].day.mintemp_c
     let lastDayMaxTemp = document.getElementById("lastdaymaxtemp").innerHTML = list.forecast.forecastday[2].day.maxtemp_c
     let lastDayminTemp = document.getElementById("lastdaymintemp").innerHTML = list.forecast.forecastday[2].day.mintemp_c
-    let secondDayStatus=document.getElementById("seconddaystatus").innerHTML=list.forecast.forecastday[1].day.condition.text
-    let lastDayStatus=document.getElementById("lastdaystatus").innerHTML=list.forecast.forecastday[2].day.condition.text
+    let secondDayStatus = document.getElementById("seconddaystatus").innerHTML = list.forecast.forecastday[1].day.condition.text
+    let lastDayStatus = document.getElementById("lastdaystatus").innerHTML = list.forecast.forecastday[2].day.condition.text
+    let secondDayIcon = document.getElementById("seconddayicon").setAttribute("src",list.forecast.forecastday[1].day.condition.icon) 
+    let lastDayIcon = document.getElementById("lastdayicon").setAttribute("src",list.forecast.forecastday[2].day.condition.icon) 
 }
 myreq()
 
