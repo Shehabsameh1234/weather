@@ -1,4 +1,4 @@
-"use srrict"
+"use strict"
 
 // global var
 let inputFind = document.getElementById("find-input")
