@@ -6,11 +6,7 @@ let btnfind = document.getElementById("btn-find")
 let list = []
 // global var
 
-
-
-
 async function myreq(city="cairo") {
-
     // get data from api
     let myres = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d0e84b5cccb245e6a4772519231208&q=${city}&days=3`).catch((error) => console.log(error))
     let data = await myres.json()
@@ -35,7 +31,6 @@ async function myreq(city="cairo") {
 }
 myreq()
 
-
 // get user location(city)
 async function locationcity() {
     var myres = await fetch(`https://ipinfo.io/json?token=76e6fb570bd7a1`).catch((error) => console.log(error))
@@ -46,20 +41,12 @@ async function locationcity() {
 locationcity()
 // get user location(city)
 
-
-
-
-
-
-
-
 // get city name from input
 btnfind.addEventListener("click", function () {
     let value = inputFind.value
     myreq(value)
 })
 // get city name from input
-
 
 // get day
 const valentines = new Date();
@@ -80,7 +67,6 @@ let currentDay = document.getElementById("firstday-day").innerHTML = currentday
 let tomorrowday = document.getElementById("tomorrow").innerHTML = tomorrow
 let aftertomorrowday = document.getElementById("aftertomorrow").innerHTML = aftertomorrow
 // get day
-
 
 // get month
 const thismonth = new Date();

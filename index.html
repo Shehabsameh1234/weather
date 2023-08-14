@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather</title>
     <link rel="icon" type="image/x-icon" href="img/cloudy.png">
-
-
     <script src="https://kit.fontawesome.com/0699e91419.js" crossorigin="anonymous"></script>
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
@@ -16,27 +15,22 @@
     <link rel="stylesheet" href="madia-query.css">
 </head>
 
-
-
 <body>
 
     <!-- navbar -->
-
     <nav class="navbar navbar-expand-lg  ">
         <div class="container-fluid">
             <a class="navbar-brand ms-lg-5 ms-0 text-white " href="#">
-                <img src="img/cloudy.png" alt="">
+                <img src="img/cloudy.png" alt="logo">
                 <div class="d-inline-block ">
                     <h5 class="fw-bold">weather</h5>
                     <p>tagline goes here </p>
                 </div>
             </a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars text-light"></i>
             </button>
-
             <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto text-center rounded nav-ul  mb-2 mb-lg-0">
                     <li class="nav-item rounded-pill border border-2   border-info ">
@@ -59,7 +53,6 @@
         </div>
     </nav>
     <!-- navbar -->
-
     <!-- background -->
     <div class="bg-image">
         <div class="position-relative  container ">
@@ -69,7 +62,6 @@
         </div>
     </div>
     <!-- background -->
-
     <!-- weather -->
     <div id="weather-card">
         <div class="container position-weather pt-5 ">
@@ -85,7 +77,7 @@
                             <p id="cityname" class="card-text-color mb-5 pt-3 "></p>
                             <div class="d-flex mb-4 justify-content-between">
                                 <h2 class="text-white"> <span id="cuttenttemp" ></span> &#176;c</h2>
-                                <img id="currenticon" alt="">
+                                <img id="currenticon" alt="weathericon">
                             </div>
                             <p id="currentstatus" class="text-primary pb-1"></p>
                             <div class="card-text-color  ">
@@ -102,7 +94,7 @@
                             <p id="tomorrow" class="mt-2"></p>
                         </div>
                         <div class="cardBody2  py-4  text-center ">
-                            <img id="seconddayicon" class="mb-3" alt="">
+                            <img id="seconddayicon" class="mb-3" alt="weathericon">
                             <h2 class="text-white mt-2"><span id="seconddaymaxtemp" ></span>&#176;c</h2>
                             <h4 class=" card-text-color "> <span id="seconddaylowtemp" ></span> &#176;c</h4>
                             <p id="seconddaystatus" class="text-primary mt-4"></p>
@@ -116,7 +108,7 @@
                             <p id="aftertomorrow" class="mt-2">saturday</p>
                         </div>
                         <div class="cardBody3  py-4  border-bottom-right2 border-bottom-left2 text-center ">
-                            <img id="lastdayicon" class="mb-3" alt="">
+                            <img id="lastdayicon" class="mb-3" alt="weathericon">
                             <h2 class="text-white mt-2"><span id="lastdaymaxtemp" ></span> &#176;c </h2>
                             <h4 class=" card-text-color "><span id="lastdaymintemp" ></span> &#176;c</h4>
                             <p id="lastdaystatus"   class="text-primary mt-4"></p>
@@ -127,11 +119,6 @@
         </div>
     </div>
     <!-- weather -->
-
-
-
-
-
     <!-- footer -->
     <footer id="footer">
        <div class="container  ">
@@ -141,7 +128,6 @@
                     <input type="text" class="form-control rounded-pill py-3"
                         placeholder="Enter your email">
                     <button class="btn btn-info rounded-pill  py-2">subscribe</button>
-
                 </div>
             </div>
             <div class="col-md-5 col-12">
@@ -157,31 +143,8 @@
        </div>
         
     </footer>
-    
     <!-- footer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="main.js"></script>
-
-
-
-
-
 </body>
 
 </html>

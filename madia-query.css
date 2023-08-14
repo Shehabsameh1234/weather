@@ -4,13 +4,15 @@
     .container {
         width: 95% !important;
     }
-    #weather-card .position-weather{
+
+    #weather-card .position-weather {
         position: relative;
         bottom: 100px;
-     }
-     ::placeholder{
+    }
+
+    ::placeholder {
         font-size: 9px;
-      
+
     }
 }
 
@@ -20,7 +22,7 @@
         width: 95% !important;
     }
 
-    ::placeholder{
+    ::placeholder {
         font-size: 11.5px;
     }
 }
@@ -33,15 +35,12 @@
     }
 }
 
-
 @media (min-width: 641px) and (max-width: 800px) {}
 
 
 @media (min-width: 801px) and (max-width: 1024px) {}
 
 @media (min-width: 1025px) and (max-width: 1280px) {}
-
-
 
 
 /* Desktops and laptops ----------- */
@@ -69,12 +68,6 @@
 
 
 }
-
-
-
-
-
-
 
 @media (min-width:0px)and (max-width: 990px) {
 
@@ -132,27 +125,25 @@
     .border-top-right2 {
         border-top-right-radius: 0px;
     }
-    #weather-card{
+
+    #weather-card {
         background-color: #1e202b;
-      height: auto;
-    
+        height: auto;
+
     }
- 
+
     /* card */
 
 
-    #footer p{
-       margin-top: 20px;
+    #footer p {
+        margin-top: 20px;
         text-align: center;
     }
-    
+
 
 
 
 }
-
-
-
 
 /* nav bar */
 @media (min-width:991px)and (max-width: 1280px) {
@@ -160,7 +151,7 @@
         padding: 0px 0px;
     }
 
-    
+
 }
 
 /* nav bar */
