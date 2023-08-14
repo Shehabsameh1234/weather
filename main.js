@@ -9,7 +9,7 @@ let list = []
 
 
 
-async function myreq(city) {
+async function myreq(city="cairo") {
 
     // get data from api
     let myres = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d0e84b5cccb245e6a4772519231208&q=${city}&days=3`).catch((error) => console.log(error))
