@@ -33,6 +33,7 @@ async function myreq(city="cairo") {
     // display data in html
 
 }
+myreq()
 
 
 // get user location(city)
