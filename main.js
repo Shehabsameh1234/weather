@@ -33,11 +33,10 @@ myreq()
 
 // get the city img
 async function cityimg(cityimg = "cairo") {
-    let myImg = await fetch(`https://api.teleport.org/api/urban_areas/slug:${cityimg}/images/`)
+    let myImg = await fetch(`https://api.teleport.org/api/urban_areas/slug:${cityimg}/images/`).catch((error) => console.log(error))
     let myData = await myImg.json()
     let imgUrl = myData.photos[0].image.web
     document.querySelector(".bg-image").style.backgroundImage = `url(${imgUrl})`
-
 }
 // get the city img
 
