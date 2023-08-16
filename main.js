@@ -6,7 +6,7 @@ let btnfind = document.getElementById("btn-find")
 let list = []
 // global var
 
-async function myreq(city="cairo") {
+async function myreq(city = "cairo") {
     // get data from api
     let myres = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d0e84b5cccb245e6a4772519231208&q=${city}&days=3`).catch((error) => console.log(error))
     let data = await myres.json()
@@ -28,8 +28,25 @@ async function myreq(city="cairo") {
     let lastDayIcon = document.getElementById("lastdayicon").setAttribute("src", list.forecast.forecastday[2].day.condition.icon)
     // display data in html
 
+    // get the city name from input and display the img of it
+    inputFind.addEventListener("blur", function () {
+        cityimg(inputFind.value)
+    })
+    // get the city name from input and display the img of it
 }
 myreq()
+
+
+
+// get the city img
+async function cityimg(cityimg = "cairo") {
+    let myImg = await fetch(`https://api.teleport.org/api/urban_areas/slug:${cityimg}/images/`)
+    let myData = await myImg.json()
+    let imgUrl = myData.photos[0].image.web
+    document.querySelector(".bg-image").style.backgroundImage = `url(${imgUrl})`
+
+}
+// get the city img
 
 // get user location(city)
 async function locationcity() {
@@ -40,6 +57,7 @@ async function locationcity() {
 };
 locationcity()
 // get user location(city)
+
 
 // get city name from input
 btnfind.addEventListener("click", function () {
