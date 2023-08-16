@@ -31,8 +31,6 @@ async function myreq(city = "cairo") {
 }
 myreq()
 
-
-
 // get the city img
 async function cityimg(cityimg = "cairo") {
     let myImg = await fetch(`https://api.teleport.org/api/urban_areas/slug:${cityimg}/images/`)
@@ -53,14 +51,24 @@ async function locationcity() {
 locationcity()
 // get user location(city)
 
-
 // get city name from input and display the img of the city
 btnfind.addEventListener("click", function () {
     let value = inputFind.value
     myreq(value)
     cityimg(value)
+   
 })
 // get city name from input and display the img of the city
+
+// use the enter key to search for the city
+document.addEventListener("keypress",function(e){
+    if(e.key=="Enter"){
+        let value = inputFind.value
+        myreq(value)
+        cityimg(value)
+    }
+})
+// use the enter key to search for the city
 
 
 // get day
@@ -92,6 +100,10 @@ const daynum = new Date();
 let daynumber = daynum.getDate()
 let firstdaymonth = document.getElementById("firstday-month").innerHTML = daynumber + " " + currentmonth
 // get month
+
+
+
+
 
 
 
