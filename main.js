@@ -28,11 +28,6 @@ async function myreq(city = "cairo") {
     let lastDayIcon = document.getElementById("lastdayicon").setAttribute("src", list.forecast.forecastday[2].day.condition.icon)
     // display data in html
 
-    // get the city name from input and display the img of it
-    inputFind.addEventListener("blur", function () {
-        cityimg(inputFind.value)
-    })
-    // get the city name from input and display the img of it
 }
 myreq()
 
@@ -59,12 +54,14 @@ locationcity()
 // get user location(city)
 
 
-// get city name from input
+// get city name from input and display the img of the city
 btnfind.addEventListener("click", function () {
     let value = inputFind.value
     myreq(value)
+    cityimg(value)
 })
-// get city name from input
+// get city name from input and display the img of the city
+
 
 // get day
 const valentines = new Date();
