@@ -55,13 +55,13 @@ btnfind.addEventListener("click", function () {
     let value = inputFind.value
     myreq(value)
     cityimg(value)
-   
+
 })
 // get city name from input and display the img of the city
 
 // use the enter key to search for the city
-document.addEventListener("keypress",function(e){
-    if(e.key=="Enter"){
+document.addEventListener("keypress", function (e) {
+    if (e.key == "Enter") {
         let value = inputFind.value
         myreq(value)
         cityimg(value)
@@ -76,14 +76,15 @@ const day = valentines.getDay();
 const dayNames = ["Sunday", "Monday", "Tuesday", " Wednesday", "Thursday", "friday", "saturday"];
 let currentday = dayNames[day];
 let tomorrow = dayNames[day + 1];
+let aftertomorrow = dayNames[day + 2];
 if (
     tomorrow == undefined) {
     tomorrow = "sunday"
-}
-let aftertomorrow = dayNames[day + 2];
-if (
-    aftertomorrow == undefined) {
+} if (tomorrow == "saturday") {
     aftertomorrow = "sunday"
+}
+if (aftertomorrow == undefined) {
+    aftertomorrow = "monday"
 }
 let currentDay = document.getElementById("firstday-day").innerHTML = currentday
 let tomorrowday = document.getElementById("tomorrow").innerHTML = tomorrow
