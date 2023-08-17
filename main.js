@@ -83,7 +83,7 @@ if (
 let aftertomorrow = dayNames[day + 2];
 if (
     aftertomorrow == undefined) {
-    aftertomorrow = "monday"
+    aftertomorrow = "sunday"
 }
 let currentDay = document.getElementById("firstday-day").innerHTML = currentday
 let tomorrowday = document.getElementById("tomorrow").innerHTML = tomorrow
