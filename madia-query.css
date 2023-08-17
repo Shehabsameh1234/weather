@@ -152,6 +152,17 @@
     }
 
 
+
 }
 
 /* nav bar */
+
+
+/* current degree size */
+@media (min-width:992px)and (max-width: 1250px) {
+  .size-mediaQ{
+    font-size: 44px !important;
+    margin-top: 9px;
+  }
+}
+/* current degree size */
