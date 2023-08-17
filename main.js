@@ -44,7 +44,7 @@ async function cityimg(cityimg = "cairo") {
 async function locationcity() {
     var myres = await fetch(`https://ipinfo.io/json?token=76e6fb570bd7a1`).catch((error) => console.log(error))
     var data = await myres.json()
-    var city = data.city
+    var city = data.region
     myreq(city)
 };
 locationcity()
